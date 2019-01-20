@@ -1,0 +1,5 @@
+# Permalinks
+
+collections:
+  stories:
+    output: true

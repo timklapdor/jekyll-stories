@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<meta charset="utf-8">
+<title>Fisheries Story Tests</title>
+<link rel="canonical" href="pets.html">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+<script async custom-element="amp-story" src="https://cdn.ampproject.org/v0/amp-story-1.0.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+<style amp-custom>
+  amp-story {
+    font-family: 'Roboto', serif;
+    font-size: 24px;
+    color: #fff;
+  }
+  amp-story-page {
+    background-color: #000;
+
+  }
+  amp-story-grid-layer h1 {
+    font-weight: 700;
+    font-size: 2.875rem;
+    line-height: .9;
+    border-bottom: 4px solid #CA4B20;
+    padding-bottom: .2em;
+  }
+  p {
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.5em;
+    color: #fff;
+  }
+
+  q {
+    font-weight: 400;
+    font-size: 1.1em;
+  }
+
+  amp-story-grid-layer.logo-top-left {
+    align-content:start;
+    padding: 2vw;
+  }
+
+  amp-story-grid-layer.logo-top-left > *{
+    justify-self:start;
+  }
+
+  amp-story-grid-layer.logo-top-right {
+    align-content:start;
+    padding: 2vw;
+    justify-self:end;
+  }
+
+  amp-story-grid-layer.logo-top-right > * {
+    justify-self:end;
+  }
+
+  amp-story-grid-layer.logo-bottom {
+    align-content:end ;
+    justify-content: flex-end;
+    padding: 1.5vw;
+  }
+
+  amp-story-grid-layer.logo-bottom > * {
+    justify-self:end;
+  }
+
+  amp-story-grid-layer.logo-bottom img {
+    max-width: 80%;
+  }
+
+  amp-story-grid-layer.bottom {
+    align-items: flex-end;
+    align-content:end;
+  }
+
+  amp-story-grid-layer.noedge {
+    padding: 0px;
+  }
+
+  amp-story-grid-layer blockquote {
+    border-left: 4px solid #087CC1;
+  }
+
+  amp-story-grid-layer blockquote.yellow {
+    border-left: 4px solid #FAA300;
+  }
+
+  amp-story-grid-layer blockquote p {
+    padding: .7rem;
+  }
+
+  amp-story-grid-layer.center-text {
+    align-content: center;
+  }
+
+  .caption-info {
+    border-bottom: 4px solid #087CC1;
+    padding: .7em 0;
+    list-style: none;
+    font-size: 1.1rem;
+  }
+
+  .bottom {
+    align-items: flex-end;
+    align-content:end;
+  }
+
+  .quote-speech {
+    border: none;
+    margin: -4rem 0;
+  }
+
+  .quote-speech:before {
+    content: open-quote;
+    font-size: 4rem;
+    color: #FAA300;
+    display: inline;
+  }
+
+  .quote-speech:after {
+    content: close-quote;
+    font-size: 4rem;
+    color: #FAA300;
+    display: inline;
+    position: relative;
+    left: 80vw;
+  }
+
+  blockquote.quote-speech + cite {
+    font-size: .9rem;
+    padding: 1em 0;
+    border-bottom: 2px solid #FAA300;
+  }
+
+  blockquote.quote-speech p {
+    font-style: italic;
+    font-size: 1.3rem;
+    margin: -3rem 0 -1em 0;
+  }
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+  }
+  .banner-text {
+    text-align: center;
+    background-color: #000;
+    line-height: 2em;
+  }
+
+  .block {
+    margin: 0;
+    padding: 0;
+  }
+
+  .block .block-content {
+    background-color: rgb(6,63,92,.8);
+    padding: 5vw;
+  }
+
+</style>
+  </head>
+  <body>
+    <amp-story standalone
+      title="AMP Story Mockup"
+      publisher="26fifty"
+      publisher-logo-src="/assets/global/26fifty.png"
+      poster-portrait-src="/assets/test/cover.jpg">
+
+<!-- PAGE HERE -->
+
+      <amp-story-page id="cover">
+        <amp-story-grid-layer template="fill">
+          <amp-img src="/assets/fisheries/home.jpg"
+              width="720" height="1280"
+              layout="responsive"
+              style="filter: brightness(.8)">
+          </amp-img>
+        </amp-story-grid-layer>
+        <amp-story-grid-layer template="fill">
+          <div style="background: linear-gradient(to bottom, rgba(0,0,0,0.45) 0%,rgba(0,0,0,0) 40%,rgba(0,0,0,0) 100%);">
+          </div>
+        </amp-story-grid-layer>
+
+        <amp-story-grid-layer template="vertical" class="logo-top-left">
+          <amp-img src="/assets/global/dpi-rev.svg"
+              width="200" height="60">
+          </amp-img>
+        </amp-story-grid-layer>
+
+        <amp-story-grid-layer template="vertical" class="logo-bottom">
+          <amp-img src="/assets/global/fisheries.svg"
+              width="50" height="50">
+          </amp-img>
+        </amp-story-grid-layer>
+
+        <amp-story-grid-layer template="thirds" class="center-text">
+          <div grid-area="middle-third"
+          animate-in="fly-in-left"
+          animate-in-delay="0.2s"
+          animate-in-duration="0.5s">
+          <h1>Fisheries AMP Story Test</h1>
+          <p>By 26fifty</p>
+        </div>
+        </amp-story-grid-layer>
+      </amp-story-page>
+
+<!-- PAGE HERE -->
+
+      <amp-story-page id="page 1">
+
+        <amp-story-grid-layer template="fill">
+          <amp-img src="/assets/fisheries/home.jpg"
+              width="720" height="1280"
+              layout="responsive"
+              style="filter: brightness(.5) blur(4px);">
+          </amp-img>
+        </amp-story-grid-layer>
+        <amp-story-grid-layer template="fill">
+          <div style="background: linear-gradient(to bottom, rgba(0,0,0,0.45) 0%,rgba(0,0,0,0) 40%,rgba(0,0,0,0) 100%);">
+          </div>
+        </amp-story-grid-layer>
+
+        <amp-story-grid-layer template="vertical" class="logo-top-right">
+          <amp-img src="/assets/global/fisheries-line.svg"
+              width="50" height="50">
+          </amp-img>
+        </amp-story-grid-layer>
+
+        <amp-story-grid-layer template="vertical" class="center-text">
+          <div
+          animate-in="whoosh-in-left"
+          animate-in-delay="0.2s"
+          animate-in-duration="0.5s">
+          <blockquote>
+            <p>Player-coach touch base. Cloud strategy price point are there any leftovers in the kitchen? so organic growth critical mass. Future-proof. Touch base. Knowledge process outsourcing gain traction fire up your browser, but let's schedule a standup during the sprint to review our kpis but can you slack it to me? </p>
+
+            <p>Or optics yet we need to build it so that it scales. Design thinking we are running out of runway the last person we talked to said this would be ready so powerpoint Bunny one-sheet, but minimize backwards overflow but what the. Personal development.</p>
+          </blockquote>
+        </div>
+        </amp-story-grid-layer>
+      </amp-story-page>
+
+<!-- PAGE HERE -->
+
+
+<amp-story-page id="page 2">
+
+  <amp-story-grid-layer template="fill">
+    <amp-img src="/assets/fisheries/home.jpg"
+        width="720" height="1280"
+        layout="responsive">
+    </amp-img>
+  </amp-story-grid-layer>
+  <amp-story-grid-layer template="fill">
+    <div style="background: linear-gradient(to top, rgba(0,0,0,0.8) 0%,rgba(0,0,0,0) 30%,rgba(0,0,0,0) 100%);">
+    </div>
+  </amp-story-grid-layer>
+
+  <amp-story-grid-layer template="vertical" class="logo-top-right">
+    <amp-img src="/assets/global/fisheries-line.svg"
+        width="50" height="50">
+    </amp-img>
+  </amp-story-grid-layer>
+
+  <amp-story-grid-layer template="thirds" class="bottom">
+    <div
+    grid-area="lower-third"
+    animate-in="whoosh-in-left"
+    animate-in-delay="0.2s"
+    animate-in-duration="0.5s">
+    <h3>Trout caught near Jindabyne</h3>
+    <ul class="caption-info">
+      <li>Weight: 500g</li>
+      <li>Age: 2 Years</li>
+      <li>Date: 2/7/2018</li>
+    </ul>
+  </div>
+  </amp-story-grid-layer>
+</amp-story-page>
+
+<!-- PAGE HERE -->
+
+
+<amp-story-page id="page 3">
+
+  <amp-story-grid-layer template="fill">
+    <amp-img src="/assets/fisheries/fisher-quote.jpg"
+        width="720" height="1280"
+        layout="responsive"
+        style="filter: brightness(.7)">
+    </amp-img>
+  </amp-story-grid-layer>
+
+  <amp-story-grid-layer template="vertical" class="logo-top-right">
+    <amp-img src="/assets/global/fisheries-line.svg"
+        width="50" height="50">
+    </amp-img>
+  </amp-story-grid-layer>
+
+  <amp-story-grid-layer template="vertical" class="center-text">
+
+  <blockquote class="quote-speech">
+    <p>We need to have a Come to Jesus meeting with Phil about his attitude viral engagement, anti-pattern clear blue water accountable talk. Synergestic actionables I have zero cycles for this, nor this proposal is a win-win situation which will cause a stellar paradigm shift.</p>
+  </blockquote>
+  <cite>Wes, 39 from Gosford</cite>
+  </amp-story-grid-layer>
+</amp-story-page>
+
+<!-- PAGE HERE -->
+
+
+<amp-story-page id="page 4">
+
+  <amp-story-grid-layer template="fill">
+    <amp-img src="/assets/fisheries/fingerlings.jpg"
+        width="720" height="1280"
+        layout="responsive">
+    </amp-img>
+  </amp-story-grid-layer>
+
+  <amp-story-grid-layer template="vertical" class="logo-top-right">
+    <amp-img src="/assets/global/fisheries-line.svg"
+        width="50" height="50">
+    </amp-img>
+  </amp-story-grid-layer>
+
+  <amp-story-grid-layer template="thirds" class="bottom block">
+    <div
+    grid-area="lower-third"
+    animate-in="whoosh-in-left"
+    animate-in-delay="0.2s"
+    animate-in-duration="0.5s"
+    class="block-content">
+    <blockquote class="yellow">
+      <p>Back of the net pro-sumer software land the plane. We need to leverage our synergies first-order optimal strategies we need to dialog around your choice of work attire work, or low-hanging fruit this is not the hill i want to die on. </p>
+    </blockquote>
+  </div>
+  </amp-story-grid-layer>
+
+</amp-story-page>
+
+
+<amp-story-page id="video">
+  <amp-story-grid-layer template="fill">
+    <amp-video
+      width="674"
+      height="1200"
+      src="/assets/fisheries/trout-clip-2.mp4"
+      poster="/assets/fisheries/trout-swimming-poster.jpg"
+      layout="responsive"
+      autoplay
+      loop>
+    </amp-video>
+  </amp-story-grid-layer>
+
+  <amp-story-grid-layer template="fill">
+    <div style="background: linear-gradient(to top, rgba(0,0,0,0.8) 0%,rgba(0,0,0,0) 30%,rgba(0,0,0,0) 100%);">
+    </div>
+  </amp-story-grid-layer>
+
+  <amp-story-grid-layer template="thirds" class="bottom">
+    <div
+    grid-area="lower-third"
+    animate-in="whoosh-in-left"
+    animate-in-delay="0.2s"
+    animate-in-duration="0.5s">
+    <h3>Testing Text Over Video</h3>
+  </div>
+  </amp-story-grid-layer>
+</amp-story-page>
+
+<amp-story-bookend src="/assets/fisheries/bookend.json"
+  layout="nodisplay">
+</amp-story-bookend>
+
+    </amp-story>
+  </body>
+</html>

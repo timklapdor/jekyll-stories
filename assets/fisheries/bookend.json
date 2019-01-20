@@ -1,0 +1,72 @@
+---
+
+---
+
+{
+  "bookendVersion": "v1.0",
+  "shareProviders": [
+    "email",
+    "twitter",
+    {
+      "provider": "facebook",
+      "app_id": "254325784911610"
+    }
+  ],
+  "components": [
+    {
+      "type": "heading",
+      "text": "More Department of Primary Industries Stories"
+    },
+    {
+      "type": "small",
+      "title": "Developing a Trout Strategy",
+      "url": "#",
+      "image": "{{ site.baseurl }}/assets/fisheries/bookend-trout.jpg"
+    },
+    {
+      "type": "small",
+      "title": "Climate and the Future of Wine",
+      "url": "#",
+      "image": "{{ site.baseurl }}/assets/fisheries/bookend-wine.png"
+    },
+    {
+      "type": "small",
+      "title": "Challenges for Forestry",
+      "url": "#",
+      "image": "{{ site.baseurl }}/assets/fisheries/bookend-forestry.png"
+    },
+    {
+      "type": "small",
+      "title": "Grain Storage Options",
+      "url": "#",
+      "image": "{{ site.baseurl }}/assets/fisheries/bookend-crop.jpg"
+    },
+    {
+      "type": "heading",
+      "text": "Credits"
+    },
+    {
+      "type": "textbox",
+      "text": [
+        "Design by Tim Klapdor",
+        "Published by 26fifty",
+        "Data supplied by the NSW Separtment of Primary Industries",
+        "Direction by Jon Tarantino"
+      ]
+    },
+    {
+      "type": "cta-link",
+      "links": [
+        {
+          "text": "Learn more",
+          "url": "https://www.ampproject.org/stories/"
+        },
+        {
+          "text": "Learn more",
+          "url": "https://www.ampproject.org/stories/"
+        }
+      ]
+    }
+
+  ]
+}
