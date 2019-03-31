@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>D3 Test</title>
+
+
+  </head>
+  <body>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
+    <script src="../assets/js/datamaps.aus.min.js"></script>
+    <div id="container" style="position: relative; width: 1000px; height: 800px;"></div>
+    <script>
+        var map = new Datamap({
+            element: document.getElementById('container'),
+            fills: {
+                defaultFill: 'rgba(23,48,210,0.9)' // Any hex, color name or rgb/rgba value
+            }
+        });
+    </script>
+  </body>
+</html>

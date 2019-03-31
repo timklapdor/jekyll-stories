@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <meta charset="utf-8">
-<title>NSW Trout Monitoring</title>
+<title>{{ page.title }}</title>
 <link rel="canonical" href="pets.html">
 <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -212,15 +212,15 @@
     <amp-story standalone
       title="NSW Trout monitoring "
       publisher="26fifty"
-      publisher-logo-src="/assets/global/26fifty.png"
-      poster-portrait-src="/assets/test/cover.jpg">
+      publisher-logo-src="{{ site.baseurl }}/assets/global/26fifty.png"
+      poster-portrait-src="{{ site.baseurl }}/assets/test/cover.jpg">
 
 
 <!-- PAGE HERE -->
 
       <amp-story-page id="cover">
         <amp-story-grid-layer template="fill">
-          <amp-img src="/assets/fisheries/trout.jpg"
+          <amp-img src="{{ site.baseurl }}/assets/fisheries/trout.jpg"
               width="720" height="1280"
               layout="responsive"
               style="filter: brightness(.8)">
@@ -232,13 +232,13 @@
         </amp-story-grid-layer>
 
         <amp-story-grid-layer template="vertical" class="logo-top-left">
-          <amp-img src="/assets/global/dpi-rev.svg"
+          <amp-img src="{{ site.baseurl }}/assets/global/dpi-rev.svg"
               width="200" height="60">
           </amp-img>
         </amp-story-grid-layer>
 
         <amp-story-grid-layer template="vertical" class="logo-bottom">
-          <amp-img src="/assets/global/fisheries.svg"
+          <amp-img src="{{ site.baseurl }}/assets/global/fisheries.svg"
               width="50" height="50">
           </amp-img>
         </amp-story-grid-layer>
@@ -248,8 +248,8 @@
           animate-in="fly-in-left"
           animate-in-delay="0.2s"
           animate-in-duration="0.5s">
-          <h1>NSW Trout Monitoring</h1>
-          <p>Developing a strategy for stream monitoring</p>
+          <h1>{{ page.title }}</h1>
+          <p>{{ page.subtitle }}</p>
         </div>
         </amp-story-grid-layer>
       </amp-story-page>
@@ -259,7 +259,7 @@
       <amp-story-page id="page 1">
 
         <amp-story-grid-layer template="fill">
-          <amp-img src="/assets/fisheries/creek.jpg"
+          <amp-img src="{{ site.baseurl }}/assets/fisheries/creek.jpg"
               width="720" height="1280"
               layout="responsive"
               style="filter: brightness(.5) blur(4px);">
@@ -271,7 +271,7 @@
         </amp-story-grid-layer>
 
         <amp-story-grid-layer template="vertical" class="logo-top-right">
-          <amp-img src="/assets/global/fisheries-line.svg"
+          <amp-img src="{{ site.baseurl }}/assets/global/fisheries-line.svg"
               width="50" height="50">
           </amp-img>
         </amp-story-grid-layer>
@@ -299,7 +299,7 @@
 <amp-story-page id="page 2">
 
   <amp-story-grid-layer template="fill">
-    <amp-img src="/assets/fisheries/creek.jpg"
+    <amp-img src="{{ site.baseurl }}/assets/fisheries/creek.jpg"
         width="720" height="1280"
         layout="responsive"
         style="filter: brightness(.5) blur(4px);">
@@ -311,7 +311,7 @@
   </amp-story-grid-layer>
 
   <amp-story-grid-layer template="vertical" class="logo-top-left">
-    <amp-img src="/assets/global/fisheries-line.svg"
+    <amp-img src="{{ site.baseurl }}/assets/global/fisheries-line.svg"
         width="50" height="50">
     </amp-img>
   </amp-story-grid-layer>
@@ -329,14 +329,14 @@
 <amp-story-page id="page 3">
 
   <amp-story-grid-layer template="fill">
-    <amp-img src="/assets/fisheries/creek.jpg"
+    <amp-img src="{{ site.baseurl }}/assets/fisheries/creek.jpg"
         width="720" height="1280"
         layout="responsive">
     </amp-img>
   </amp-story-grid-layer>
 
   <amp-story-grid-layer template="vertical" class="logo-top-left">
-    <amp-img src="/assets/global/fisheries-line.svg"
+    <amp-img src="{{ site.baseurl }}/assets/global/fisheries-line.svg"
         width="50" height="50">
     </amp-img>
   </amp-story-grid-layer>
@@ -360,7 +360,7 @@
 <amp-story-page id="page 4">
 
   <amp-story-grid-layer template="fill">
-    <amp-img src="/assets/fisheries/parched.jpg"
+    <amp-img src="{{ site.baseurl }}/assets/fisheries/parched.jpg"
         width="720" height="1280"
         layout="responsive">
     </amp-img>
@@ -371,7 +371,7 @@
   </amp-story-grid-layer>
 
   <amp-story-grid-layer template="vertical" class="logo-top-left">
-    <amp-img src="/assets/global/fisheries-line.svg"
+    <amp-img src="{{ site.baseurl }}/assets/global/fisheries-line.svg"
         width="50" height="50">
     </amp-img>
   </amp-story-grid-layer>
@@ -394,7 +394,7 @@
 <amp-story-page id="page 5">
 
   <amp-story-grid-layer template="fill">
-    <amp-img src="/assets/fisheries/handfull.jpg"
+    <amp-img src="{{ site.baseurl }}/assets/fisheries/handfull.jpg"
         width="720" height="1280"
         layout="responsive">
     </amp-img>
@@ -405,7 +405,7 @@
   </amp-story-grid-layer>
 
   <amp-story-grid-layer template="vertical" class="logo-top-left">
-    <amp-img src="/assets/global/fisheries-line.svg"
+    <amp-img src="{{ site.baseurl }}/assets/global/fisheries-line.svg"
         width="50" height="50">
     </amp-img>
   </amp-story-grid-layer>
@@ -427,7 +427,7 @@
 <amp-story-page id="page 6">
 
   <amp-story-grid-layer template="fill">
-    <amp-img src="/assets/fisheries/measured.jpg"
+    <amp-img src="{{ site.baseurl }}/assets/fisheries/measured.jpg"
         width="720" height="1280"
         layout="responsive">
     </amp-img>
@@ -438,7 +438,7 @@
   </amp-story-grid-layer>
 
   <amp-story-grid-layer template="vertical" class="logo-top-left">
-    <amp-img src="/assets/global/fisheries-line.svg"
+    <amp-img src="{{ site.baseurl }}/assets/global/fisheries-line.svg"
         width="50" height="50">
     </amp-img>
   </amp-story-grid-layer>
@@ -460,7 +460,7 @@
 <amp-story-page id="page 7">
 
   <amp-story-grid-layer template="fill">
-    <amp-img src="/assets/fisheries/field.jpg"
+    <amp-img src="{{ site.baseurl }}/assets/fisheries/field.jpg"
         width="720" height="1280"
         layout="responsive">
     </amp-img>
@@ -471,7 +471,7 @@
   </amp-story-grid-layer>
 
   <amp-story-grid-layer template="vertical" class="logo-top-left">
-    <amp-img src="/assets/global/fisheries-line.svg"
+    <amp-img src="{{ site.baseurl }}/assets/global/fisheries-line.svg"
         width="50" height="50">
     </amp-img>
   </amp-story-grid-layer>
@@ -493,7 +493,7 @@
 <amp-story-page id="page 8">
 
   <amp-story-grid-layer template="fill">
-    <amp-img src="/assets/fisheries/trayfull.jpg"
+    <amp-img src="{{ site.baseurl }}/assets/fisheries/trayfull.jpg"
         width="720" height="1280"
         layout="responsive">
     </amp-img>
@@ -504,7 +504,7 @@
   </amp-story-grid-layer>
 
   <amp-story-grid-layer template="vertical" class="logo-top-left">
-    <amp-img src="/assets/global/fisheries-line.svg"
+    <amp-img src="{{ site.baseurl }}/assets/global/fisheries-line.svg"
         width="50" height="50">
     </amp-img>
   </amp-story-grid-layer>
@@ -526,14 +526,14 @@
 <amp-story-page id="page 9">
 
   <amp-story-grid-layer template="fill">
-    <amp-img src="/assets/fisheries/fingerlings.jpg"
+    <amp-img src="{{ site.baseurl }}/assets/fisheries/fingerlings.jpg"
         width="720" height="1280"
         layout="responsive">
     </amp-img>
   </amp-story-grid-layer>
 
   <amp-story-grid-layer template="vertical" class="logo-top-left">
-    <amp-img src="/assets/global/fisheries-line.svg"
+    <amp-img src="{{ site.baseurl }}/assets/global/fisheries-line.svg"
         width="50" height="50">
     </amp-img>
   </amp-story-grid-layer>
@@ -553,7 +553,7 @@
 <amp-story-page id="page 10">
 
   <amp-story-grid-layer template="fill">
-    <amp-img src="/assets/fisheries/maps.jpg"
+    <amp-img src="{{ site.baseurl }}/assets/fisheries/maps.jpg"
         width="720" height="1280"
         layout="responsive">
     </amp-img>
@@ -564,7 +564,7 @@
   </amp-story-grid-layer>
 
   <amp-story-grid-layer template="vertical" class="logo-top-left">
-    <amp-img src="/assets/global/fisheries-line.svg"
+    <amp-img src="{{ site.baseurl }}/assets/global/fisheries-line.svg"
         width="50" height="50">
     </amp-img>
   </amp-story-grid-layer>
@@ -588,7 +588,7 @@
 <!-- <amp-story-page id="page ">
 
   <amp-story-grid-layer template="fill">
-    <amp-img src="/assets/fisheries/fisher-quote.jpg"
+    <amp-img src="{{ site.baseurl }}/assets/fisheries/fisher-quote.jpg"
         width="720" height="1280"
         layout="responsive"
         style="filter: brightness(.7)">
@@ -596,7 +596,7 @@
   </amp-story-grid-layer>
 
   <amp-story-grid-layer template="vertical" class="logo-top-left">
-    <amp-img src="/assets/global/fisheries-line.svg"
+    <amp-img src="{{ site.baseurl }}/assets/global/fisheries-line.svg"
         width="50" height="50">
     </amp-img>
   </amp-story-grid-layer>
@@ -616,14 +616,14 @@
 <!-- <amp-story-page id="page xx">
 
   <amp-story-grid-layer template="fill">
-    <amp-img src="/assets/fisheries/fingerlings.jpg"
+    <amp-img src="{{ site.baseurl }}/assets/fisheries/fingerlings.jpg"
         width="720" height="1280"
         layout="responsive">
     </amp-img>
   </amp-story-grid-layer>
 
   <amp-story-grid-layer template="vertical" class="logo-top-left">
-    <amp-img src="/assets/global/fisheries-line.svg"
+    <amp-img src="{{ site.baseurl }}/assets/global/fisheries-line.svg"
         width="50" height="50">
     </amp-img>
   </amp-story-grid-layer>
@@ -649,8 +649,8 @@
     <amp-video
       width="674"
       height="1200"
-      src="/assets/fisheries/trout-clip-2.mp4"
-      poster="/assets/fisheries/trout-swimming-poster.jpg"
+      src="{{ site.baseurl }}/assets/fisheries/trout-clip-2.mp4"
+      poster="{{ site.baseurl }}/assets/fisheries/trout-swimming-poster.jpg"
       layout="responsive"
       autoplay
       loop>
@@ -673,7 +673,7 @@
   </amp-story-grid-layer>
 </amp-story-page> -->
 
-<amp-story-bookend src="/assets/fisheries/bookend.json"
+<amp-story-bookend src="{{ site.baseurl }}/assets/fisheries/bookend.json"
   layout="nodisplay">
 </amp-story-bookend>
 
