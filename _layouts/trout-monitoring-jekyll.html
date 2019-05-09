@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <meta charset="utf-8">
-<title>NSW Trout Monitoring</title>
+<title>{{ page.title }}</title>
 <link rel="canonical" href="pets.html">
 <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -10,177 +10,12 @@
 
 <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
 
-
+{% capture styles %}
+{% include story.scss %}
+{% endcapture %}
 
 <style amp-custom>
-  amp-story {
-  font-family: 'Roboto', serif;
-  font-size: 24px;
-  color: #ffffff; }
-
-amp-story-page {
-  background-color: #000; }
-
-amp-story-grid-layer {
-  padding: 5vh 10vw; }
-
-amp-story-grid-layer h1 {
-  font-weight: 700;
-  font-size: 2.875rem;
-  line-height: .9;
-  border-bottom: 4px solid #CA4B20;
-  padding-bottom: .2em; }
-
-p, li {
-  font-weight: 400;
-  font-size: 1.3rem;
-  line-height: 1.2em;
-  color: #fff; }
-
-p + p {
-  margin-top: 1rem; }
-
-q {
-  font-weight: 400;
-  font-size: 1.1em; }
-
-amp-story-grid-layer.logo-top-left {
-  align-content: start;
-  padding: 2vw; }
-
-amp-story-grid-layer.logo-top-left > * {
-  justify-self: start; }
-
-amp-story-grid-layer.logo-top-right {
-  align-content: start;
-  padding: 2vw;
-  justify-self: end; }
-
-amp-story-grid-layer.logo-top-right > * {
-  justify-self: end; }
-
-amp-story-grid-layer.logo-bottom {
-  align-content: end;
-  justify-content: flex-end;
-  padding: 1.5vw; }
-
-amp-story-grid-layer.logo-bottom > * {
-  justify-self: end; }
-
-amp-story-grid-layer.logo-bottom img {
-  max-width: 80%; }
-
-amp-story-grid-layer.bottom {
-  align-items: flex-end;
-  align-content: end; }
-
-amp-story-grid-layer.noedge {
-  padding: 0px; }
-
-amp-story-grid-layer blockquote {
-  border-left: 4px solid #087CC1; }
-
-amp-story-grid-layer blockquote.yellow {
-  border-left: 4px solid #FAA300; }
-
-amp-story-grid-layer blockquote p {
-  padding: .7rem; }
-
-amp-story-grid-layer.center-text {
-  align-content: center; }
-
-.caption-info {
-  border-bottom: 4px solid #087CC1;
-  padding: .7em 0;
-  list-style: none;
-  font-size: 1.1rem; }
-
-.bottom {
-  align-items: flex-end;
-  align-content: end; }
-
-.quote-speech {
-  border: none;
-  margin: -4rem 0; }
-
-.quote-speech:before {
-  content: open-quote;
-  font-size: 4rem;
-  color: #FAA300;
-  display: inline; }
-
-.quote-speech:after {
-  content: close-quote;
-  font-size: 4rem;
-  display: inline;
-  position: relative;
-  left: 80vw;
-  color: #FAA300; }
-
-.bg-yellow {
-  background: #FAA300; }
-
-.bg-blue {
-  background: #087CC1; }
-
-.bg-orange {
-  background: #CA4B20; }
-
-.offset-top {
-  margin-top: 20vh; }
-
-.no-padding {
-  padding: 0 !important; }
-
-.question {
-  padding: 4vw; }
-
-blockquote.quote-speech + cite {
-  font-size: .9rem;
-  padding: 1em 0;
-  border-bottom: 2px solid #FAA300; }
-
-blockquote.quote-speech p {
-  font-style: italic;
-  font-size: 1.3rem;
-  margin: -3rem 0 -1em 0; }
-
-amp-story-grid-layer blockquote.quote-line {
-  padding: .5rem 0;
-  border: 0;
-  border-top: 4px solid #FAA300 !important;
-  border-bottom: 4px solid #FAA300 !important; }
-
-.wrapper {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 50% 50%; }
-
-.banner-text {
-  text-align: center;
-  background-color: #000;
-  line-height: 2em; }
-
-.block {
-  margin: 0;
-  padding: 0; }
-
-.block .block-content {
-  background-color: rgba(6, 63, 92, 0.8);
-  padding: 5vw; }
-
-.special-numbers {
-  padding-top: 1rem; }
-
-.vertical-bottom {
-  align-content: end !important; }
-
-.vertical-top {
-  align-content: start !important; }
-
-.vertical-middle {
-  align-content: center !important; }
-
+  {{ styles | scssify }}
 </style>
 
  </head>
@@ -188,15 +23,15 @@ amp-story-grid-layer blockquote.quote-line {
   <amp-story standalone
    title="NSW Trout monitoring "
    publisher="26fifty"
-   publisher-logo-src="/assets/global/26fifty.png"
-   poster-portrait-src="/assets/test/cover.jpg">
+   publisher-logo-src="{{ site.baseurl }}/assets/global/26fifty.png"
+   poster-portrait-src="{{ site.baseurl }}/assets/test/cover.jpg">
 
 
 <!-- PAGE HERE -->
 
    <amp-story-page id="cover">
     <amp-story-grid-layer template="fill">
-     <amp-img src="/assets/fisheries/trout.jpg"
+     <amp-img src="{{ site.baseurl }}/assets/fisheries/trout.jpg"
        width="720" height="1280"
        layout="responsive"
        style="filter: brightness(.8)">
@@ -208,13 +43,13 @@ amp-story-grid-layer blockquote.quote-line {
     </amp-story-grid-layer>
 
     <amp-story-grid-layer template="vertical" class="logo-top-left">
-     <amp-img src="/assets/global/dpi-rev.svg"
+     <amp-img src="{{ site.baseurl }}/assets/global/dpi-rev.svg"
        width="200" height="60">
      </amp-img>
     </amp-story-grid-layer>
 
     <amp-story-grid-layer template="vertical" class="logo-bottom">
-     <amp-img src="/assets/global/fisheries.svg"
+     <amp-img src="{{ site.baseurl }}/assets/global/fisheries.svg"
        width="50" height="50">
      </amp-img>
     </amp-story-grid-layer>
@@ -224,8 +59,8 @@ amp-story-grid-layer blockquote.quote-line {
      animate-in="fly-in-left"
      animate-in-delay="0.2s"
      animate-in-duration="0.5s">
-     <h1>NSW Trout Monitoring</h1>
-     <p>Annual stream monitoring overview</p>
+     <h1>{{ page.title }}</h1>
+     <p>{{ page.subtitle }}</p>
     </div>
     </amp-story-grid-layer>
    </amp-story-page>
@@ -235,7 +70,7 @@ amp-story-grid-layer blockquote.quote-line {
    <amp-story-page id="page 1">
 
     <amp-story-grid-layer template="fill">
-     <amp-img src="/assets/fisheries/creek.jpg"
+     <amp-img src="{{ site.baseurl }}/assets/fisheries/creek.jpg"
        width="720" height="1280"
        layout="responsive"
        style="filter: brightness(.5) blur(4px);">
@@ -247,7 +82,7 @@ amp-story-grid-layer blockquote.quote-line {
     </amp-story-grid-layer>
 
     <amp-story-grid-layer template="vertical" class="logo-top-right">
-     <amp-img src="/assets/global/fisheries-line.svg"
+     <amp-img src="{{ site.baseurl }}/assets/global/fisheries-line.svg"
        width="50" height="50">
      </amp-img>
     </amp-story-grid-layer>
@@ -275,7 +110,7 @@ amp-story-grid-layer blockquote.quote-line {
 <amp-story-page id="page 2">
 
  <amp-story-grid-layer template="fill">
-  <amp-img src="/assets/fisheries/creek.jpg"
+  <amp-img src="{{ site.baseurl }}/assets/fisheries/creek.jpg"
     width="720" height="1280"
     layout="responsive"
     style="filter: brightness(.5) blur(4px);">
@@ -287,7 +122,7 @@ amp-story-grid-layer blockquote.quote-line {
  </amp-story-grid-layer>
 
  <amp-story-grid-layer template="vertical" class="logo-top-left">
-  <amp-img src="/assets/global/fisheries-line.svg"
+  <amp-img src="{{ site.baseurl }}/assets/global/fisheries-line.svg"
     width="50" height="50">
   </amp-img>
  </amp-story-grid-layer>
@@ -305,14 +140,14 @@ amp-story-grid-layer blockquote.quote-line {
 <amp-story-page id="page 3">
 
  <amp-story-grid-layer template="fill">
-  <amp-img src="/assets/fisheries/creek.jpg"
+  <amp-img src="{{ site.baseurl }}/assets/fisheries/creek.jpg"
     width="720" height="1280"
     layout="responsive">
   </amp-img>
  </amp-story-grid-layer>
 
  <amp-story-grid-layer template="vertical" class="logo-top-left">
-  <amp-img src="/assets/global/fisheries-line.svg"
+  <amp-img src="{{ site.baseurl }}/assets/global/fisheries-line.svg"
     width="50" height="50">
   </amp-img>
  </amp-story-grid-layer>
@@ -335,7 +170,7 @@ amp-story-grid-layer blockquote.quote-line {
 <amp-story-page id="page 7">
 
  <amp-story-grid-layer template="fill">
-  <amp-img src="/assets/fisheries/field.jpg"
+  <amp-img src="{{ site.baseurl }}/assets/fisheries/field.jpg"
     width="720" height="1280"
     layout="responsive">
   </amp-img>
@@ -346,7 +181,7 @@ amp-story-grid-layer blockquote.quote-line {
  </amp-story-grid-layer>
 
  <amp-story-grid-layer template="vertical" class="logo-top-left">
-  <amp-img src="/assets/global/fisheries-line.svg"
+  <amp-img src="{{ site.baseurl }}/assets/global/fisheries-line.svg"
     width="50" height="50">
   </amp-img>
  </amp-story-grid-layer>
@@ -367,7 +202,7 @@ amp-story-grid-layer blockquote.quote-line {
 <amp-story-page id="page 5">
 
  <amp-story-grid-layer template="fill">
-  <amp-img src="/assets/fisheries/handfull.jpg"
+  <amp-img src="{{ site.baseurl }}/assets/fisheries/handfull.jpg"
     width="720" height="1280"
     layout="responsive">
   </amp-img>
@@ -378,7 +213,7 @@ amp-story-grid-layer blockquote.quote-line {
  </amp-story-grid-layer>
 
  <amp-story-grid-layer template="vertical" class="logo-top-left">
-  <amp-img src="/assets/global/fisheries-line.svg"
+  <amp-img src="{{ site.baseurl }}/assets/global/fisheries-line.svg"
     width="50" height="50">
   </amp-img>
  </amp-story-grid-layer>
@@ -397,7 +232,7 @@ amp-story-grid-layer blockquote.quote-line {
 <!-- PAGE HERE -->
 <amp-story-page id="page 8">
  <amp-story-grid-layer template="fill">
-  <amp-img src="/assets/fisheries/trayfull.jpg"
+  <amp-img src="{{ site.baseurl }}/assets/fisheries/trayfull.jpg"
     width="720" height="1280"
     layout="responsive">
   </amp-img>
@@ -409,7 +244,7 @@ amp-story-grid-layer blockquote.quote-line {
  </amp-story-grid-layer>
 
  <amp-story-grid-layer template="vertical" class="logo-top-left">
-  <amp-img src="/assets/global/fisheries-line.svg"
+  <amp-img src="{{ site.baseurl }}/assets/global/fisheries-line.svg"
     width="50" height="50">
   </amp-img>
  </amp-story-grid-layer>
@@ -429,7 +264,7 @@ amp-story-grid-layer blockquote.quote-line {
 <amp-story-page id="page 4">
 
  <amp-story-grid-layer template="fill">
-  <amp-img src="/assets/fisheries/angler.jpg"
+  <amp-img src="{{ site.baseurl }}/assets/fisheries/angler.jpg"
     width="720" height="1280"
     layout="responsive">
   </amp-img>
@@ -441,7 +276,7 @@ amp-story-grid-layer blockquote.quote-line {
  </amp-story-grid-layer>
 
  <amp-story-grid-layer template="vertical" class="logo-top-left">
-  <amp-img src="/assets/global/fisheries-line.svg"
+  <amp-img src="{{ site.baseurl }}/assets/global/fisheries-line.svg"
     width="50" height="50">
   </amp-img>
  </amp-story-grid-layer>
@@ -462,14 +297,14 @@ amp-story-grid-layer blockquote.quote-line {
 <amp-story-page id="page 9">
 
  <amp-story-grid-layer template="fill">
-  <amp-img src="/assets/fisheries/meeting.jpg"
+  <amp-img src="{{ site.baseurl }}/assets/fisheries/meeting.jpg"
     width="720" height="1280"
     layout="responsive">
   </amp-img>
  </amp-story-grid-layer>
 
  <amp-story-grid-layer template="vertical" class="logo-top-left">
-  <amp-img src="/assets/global/fisheries-line.svg"
+  <amp-img src="{{ site.baseurl }}/assets/global/fisheries-line.svg"
     width="50" height="50">
   </amp-img>
  </amp-story-grid-layer>
@@ -492,14 +327,14 @@ amp-story-grid-layer blockquote.quote-line {
 <amp-story-page id="page 10">
 
  <amp-story-grid-layer template="fill">
-  <amp-img src="/assets/fisheries/map-regions.png"
+  <amp-img src="{{ site.baseurl }}/assets/fisheries/map-regions.png"
     width="720" height="1280"
     layout="responsive">
   </amp-img>
  </amp-story-grid-layer>
 
  <amp-story-grid-layer template="vertical" class="logo-top-left">
-  <amp-img src="/assets/global/fisheries-line.svg"
+  <amp-img src="{{ site.baseurl }}/assets/global/fisheries-line.svg"
     width="50" height="50">
   </amp-img>
  </amp-story-grid-layer>
@@ -521,7 +356,7 @@ amp-story-grid-layer blockquote.quote-line {
 <amp-story-page id="page 10a">
 
  <amp-story-grid-layer template="fill">
-  <amp-img src="/assets/fisheries/map-regions.png"
+  <amp-img src="{{ site.baseurl }}/assets/fisheries/map-regions.png"
     width="720" height="1280"
     layout="responsive">
   </amp-img>
@@ -535,7 +370,7 @@ amp-story-grid-layer blockquote.quote-line {
  </amp-story-grid-layer>
 
  <amp-story-grid-layer template="vertical" class="logo-top-left">
-  <amp-img src="/assets/global/fisheries-line.svg"
+  <amp-img src="{{ site.baseurl }}/assets/global/fisheries-line.svg"
     width="50" height="50">
   </amp-img>
  </amp-story-grid-layer>
@@ -559,7 +394,7 @@ amp-story-grid-layer blockquote.quote-line {
 <amp-story-page id="page 11">
 
  <amp-story-grid-layer template="fill">
-  <amp-img src="/assets/fisheries/electro-fishing.jpg"
+  <amp-img src="{{ site.baseurl }}/assets/fisheries/electro-fishing.jpg"
     width="720" height="1280"
     layout="responsive">
   </amp-img>
@@ -571,7 +406,7 @@ amp-story-grid-layer blockquote.quote-line {
 </amp-story-grid-layer>
 
  <amp-story-grid-layer template="vertical" class="logo-top-left">
-  <amp-img src="/assets/global/fisheries-line.svg"
+  <amp-img src="{{ site.baseurl }}/assets/global/fisheries-line.svg"
     width="50" height="50">
   </amp-img>
  </amp-story-grid-layer>
@@ -593,7 +428,7 @@ amp-story-grid-layer blockquote.quote-line {
 <amp-story-page id="page 12">
 
  <amp-story-grid-layer template="fill">
-  <amp-img src="/assets/fisheries/vaki.jpg"
+  <amp-img src="{{ site.baseurl }}/assets/fisheries/vaki.jpg"
     width="720" height="1280"
     layout="responsive">
   </amp-img>
@@ -605,7 +440,7 @@ amp-story-grid-layer blockquote.quote-line {
 </amp-story-grid-layer>
 
  <amp-story-grid-layer template="vertical" class="logo-top-left">
-  <amp-img src="/assets/global/fisheries-line.svg"
+  <amp-img src="{{ site.baseurl }}/assets/global/fisheries-line.svg"
     width="50" height="50">
   </amp-img>
  </amp-story-grid-layer>
@@ -632,7 +467,7 @@ amp-story-grid-layer blockquote.quote-line {
 <amp-story-page id="page 13">
 
  <amp-story-grid-layer template="fill">
-  <amp-img src="/assets/fisheries/vaki.jpg"
+  <amp-img src="{{ site.baseurl }}/assets/fisheries/vaki.jpg"
     width="720" height="1280"
     layout="responsive">
   </amp-img>
@@ -644,7 +479,7 @@ amp-story-grid-layer blockquote.quote-line {
 </amp-story-grid-layer>
 
  <amp-story-grid-layer template="vertical" class="logo-top-left">
-  <amp-img src="/assets/global/fisheries-line.svg"
+  <amp-img src="{{ site.baseurl }}/assets/global/fisheries-line.svg"
     width="50" height="50">
   </amp-img>
  </amp-story-grid-layer>
@@ -664,14 +499,14 @@ amp-story-grid-layer blockquote.quote-line {
 <!-- <amp-story-page id="page xx">
 
  <amp-story-grid-layer template="fill">
-  <amp-img src="/assets/fisheries/fingerlings.jpg"
+  <amp-img src="{{ site.baseurl }}/assets/fisheries/fingerlings.jpg"
     width="720" height="1280"
     layout="responsive">
   </amp-img>
  </amp-story-grid-layer>
 
  <amp-story-grid-layer template="vertical" class="logo-top-left">
-  <amp-img src="/assets/global/fisheries-line.svg"
+  <amp-img src="{{ site.baseurl }}/assets/global/fisheries-line.svg"
     width="50" height="50">
   </amp-img>
  </amp-story-grid-layer>
@@ -697,8 +532,8 @@ amp-story-grid-layer blockquote.quote-line {
   <amp-video
    width="674"
    height="1200"
-   src="/assets/fisheries/trout-clip-2.mp4"
-   poster="/assets/fisheries/trout-swimming-poster.jpg"
+   src="{{ site.baseurl }}/assets/fisheries/trout-clip-2.mp4"
+   poster="{{ site.baseurl }}/assets/fisheries/trout-swimming-poster.jpg"
    layout="responsive"
    autoplay
    loop>
@@ -721,7 +556,7 @@ amp-story-grid-layer blockquote.quote-line {
  </amp-story-grid-layer>
 </amp-story-page> -->
 
-<amp-story-bookend src="/assets/fisheries/bookend.json"
+<amp-story-bookend src="{{ site.baseurl }}/assets/fisheries/bookend.json"
  layout="nodisplay">
 </amp-story-bookend>
 

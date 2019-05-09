@@ -1,8 +1,8 @@
 ---
 
-layout: trout-monitoring
+layout: trout-monitoring-jekyll
 title: NSW Trout Monitoring  # The title of the story
-subtitle: Developing a strategy for stream monitoring 
+subtitle: Annual stream monitoring overview
 publisher: # The name of the story's publisher
 publisher-logo-src: #logo in 1x1 aspect ratio - .png
 poster-portrait-src: # Story Poster in 3x4 aspect ratio min 696px x 928px
