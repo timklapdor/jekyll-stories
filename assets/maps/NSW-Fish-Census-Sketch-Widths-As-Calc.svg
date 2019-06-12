@@ -3,6 +3,8 @@
 
   <defs>
     <style>
+      @import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+
       .blue-1 {
         fill: #003764;
         stroke: #003764;
@@ -37,6 +39,13 @@
         cursor: pointer;
         transition: all .2s ease;
       }
+
+      .rating-5 {width="280"}
+      .rating-4 {width="224"}
+      .rating-3 {width="168"}
+      .rating-2 {width="112"}
+      .rating-1 {width="56"}
+      .rating-0 {width="0"}
 
       g:hover {
       content: "data-name"
@@ -1109,10 +1118,10 @@
             <text class="fish" font-size="8">
                 <tspan x="1" y="7.4652">Murray Cod</tspan>
             </text>
-            <rect id="1998" class="legend-4" x="0.8928" y="29.4652" width="calc(280*0)" height="6"></rect>
-            <rect id="2003" class="legend-3" x="0.8928" y="23.4652" width="calc(280*.2)" height="6"></rect>
-            <rect id="2008" class="legend-2" x="0.8928" y="17.4652" width="calc(280*.8)" height="6"></rect>
-            <rect id="2013" class="legend-1" x="0.8928" y="11.4652" width="calc(280*.6)" height="6"></rect>
+            <rect id="1998" class="legend-4" x="0.8928" y="29.4652" width="calc(280*.8)" height="6"></rect>
+            <rect id="2003" class="legend-3" x="0.8928" y="23.4652" width="calc(280*.6)" height="6"></rect>
+            <rect id="2008" class="legend-2" x="0.8928" y="17.4652" width="calc(280*.4)" height="6"></rect>
+            <rect id="2013" class="legend-1" x="0.8928" y="11.4652" width="calc(280*.2)" height="6"></rect>
           </g>
           <g id="Fish-2" transform="translate(0.000000, 89.431025)">
             <text class="fish" font-size="8">
@@ -1210,7 +1219,6 @@
 
         var element = document.getElementById(region);
           element.classList.toggle("active");
-          console.log("Hello world!");
           }
       ]]></script>
 </svg>
